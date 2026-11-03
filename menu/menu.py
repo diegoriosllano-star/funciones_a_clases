@@ -1,5 +1,6 @@
 from ejercicios.ejercicio1_taxi import ViajeTaxi
 from ejercicios.ejercicio2_cine import CompraBoletos
+from ejercicios.ejercicio3_combustible import ConsumoCombustible
 
 def mostrarMenu():
     print()
@@ -28,6 +29,10 @@ def menus():
              compra.calcularCompra()
              compra.mostrarCompra()
         elif opcion == "3":
-            print("Ejercicio 3 pendiente.")
+             consumo = ConsumoCombustible()
+             consumo.leerDatos()
+             consumo.calcularRendimiento()
+             consumo.calcularCosto()
+             consumo.mostrarResultados()
         elif opcion != "0":
             print("Opción no válida.")
