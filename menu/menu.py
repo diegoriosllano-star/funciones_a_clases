@@ -1,4 +1,5 @@
 from ejercicios.ejercicio1_taxi import ViajeTaxi
+from ejercicios.ejercicio2_cine import CompraBoletos
 
 def mostrarMenu():
     print()
@@ -22,7 +23,10 @@ def menus():
             viaje.calcularImporte()
             viaje.mostrarImporte()
         elif opcion == "2":
-            print("Ejercicio 2 pendiente.")
+             compra = CompraBoletos()
+             compra.leerCantidad()
+             compra.calcularCompra()
+             compra.mostrarCompra()
         elif opcion == "3":
             print("Ejercicio 3 pendiente.")
         elif opcion != "0":
